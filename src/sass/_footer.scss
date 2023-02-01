@@ -1,5 +1,53 @@
 .footer {
-    border: 1px solid red;
+    // border: 1px solid red;
+    margin-top: 50px;
+    display: flex;
+    padding: 3em;
+    background-color: rgb(43, 63, 49);
 
-    margin-top: 7em;
+    .logo {
+        width: 250px;
+        img {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .links {
+        flex: 1;
+        // border: 1px solid red;
+        text-align: center;
+        color: #fff;
+        a {
+            text-decoration: none;
+
+            i {
+                display: inline-block;
+                cursor: pointer;
+                font-size: 30px;
+                margin: 20px;
+                color: #fff;
+            }
+        }
+
+        
+
+        .rights {
+            line-height: 2em;
+            margin-top: 1em;
+            font-weight: 300;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: block;
+        .logo {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+    }
 }

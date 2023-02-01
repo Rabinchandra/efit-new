@@ -13,7 +13,7 @@ function CarouselSlider() {
     ];
 
     return (
-        <div className="carousel-slider">
+        <div className="carousel-slider" id="carousel-slider">
             <Carousel slides={slides} autoplay={true} interval={4000}/>
         </div>
     )

@@ -13,8 +13,8 @@ function Navbar() {
             <a href="#hero" className='active'>Home</a>
             <a href="#who-we-are">About</a>
             <a href="#what-we-do">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
+            <a href="#carousel-slider">Gallery</a>
+            <a href="#contact-links">Contact</a>
         </div>
         <div className="hamburger" onClick={() => setIsClosed(false)}>
           <div className="bar"></div>
@@ -32,8 +32,8 @@ function Navbar() {
             <a href="#hero">Home</a>
             <a href="#who-we-are">About</a>
             <a href="#what-we-do">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
+            <a href="#carousel-slider">Gallery</a>
+            <a href="#contact-links">Contact</a>
           </div>
     </div>
     </>

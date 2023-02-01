@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
-import videoMp4 from '../images/hero.mp4';
+import videoMp4 from '../images/hero_1.mp4';
 
 function Hero() {
   return (
     <div className="hero" id="hero">
         <Navbar />
-        <div className="overlay"></div>
+        {/* <div className="overlay"></div> */}
         <video autoPlay loop muted className='back-video' src={videoMp4}/>
-        <div className="hero-text">
+        {/* <div className="hero-text">
             <h1> <span>Easy Fit</span> For Life</h1>
             <p>
               Fitness is not a routine. It is a choice.  Fitness is pro-life.
@@ -16,7 +16,7 @@ function Hero() {
             </p>
             <a href="#" className='btn'>Get Started</a>
         </div>
-        <div className="faded"></div>
+        <div className="faded"></div> */}
     </div>
   )
 }

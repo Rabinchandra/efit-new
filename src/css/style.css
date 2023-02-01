@@ -231,7 +231,7 @@
 .journey {
   text-align: center;
   padding: 5em 4em;
-  background-color: #333;
+  background-color: rgb(43, 63, 49);
   color: #fff;
 }
 .journey h1 {
@@ -336,11 +336,6 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 1200px) {
-  .what-we-do {
-    padding: 4em 2em;
-  }
-}
 .carousel-slider {
   width: 70%;
   margin: auto;
@@ -356,6 +351,7 @@
   .carousel-slider {
     width: 100%;
     box-sizing: border-box;
+    height: 300px;
   }
 }
 .who-we-are {
@@ -423,10 +419,50 @@
   }
 }
 .footer {
-  border: 1px solid red;
-  margin-top: 7em;
+  margin-top: 50px;
+  display: flex;
+  padding: 3em;
+  background-color: rgb(43, 63, 49);
+}
+.footer .logo {
+  width: 250px;
+}
+.footer .logo img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+}
+.footer .links {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+.footer .links a {
+  text-decoration: none;
+}
+.footer .links a i {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 20px;
+  color: #fff;
+}
+.footer .links .rights {
+  line-height: 2em;
+  margin-top: 1em;
+  font-weight: 300;
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    display: block;
+  }
+  .footer .logo {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
 body, html {
   padding: 0;
   margin: 0;
