@@ -1,13 +1,13 @@
 import React from 'react'
 import {Carousel} from '3d-react-carousal';
-import galleryOnePic from '../images/slider/1.jpg';
-import galleryTwoPic from '../images/slider/2.jpg';
-import galleryThreePic from '../images/slider/3.jpg';
+import galleryOnePic from '../../images/slider/1.jpg';
+import galleryTwoPic from '../../images/slider/2.jpg';
+import galleryThreePic from '../../images/slider/3.jpg';
 
 
 function CarouselSlider() {
     let slides = [
-        <img  src={galleryOnePic} alt="1" />,
+        <img  src={galleryOnePic} alt="1" />,       
         <img  src={galleryTwoPic} alt="1" />,
         <img  src={galleryThreePic} alt="1" />,
     ];

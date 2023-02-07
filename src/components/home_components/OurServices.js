@@ -1,23 +1,26 @@
 import React from 'react'
-import personal_training from '../images/what_we_do/personal_training.jpg'
-import injury_rehab from '../images/what_we_do/injury_rehab.png';
-import sport_fitness from '../images/what_we_do/sport_fitness.jpg';
-import yoga_meditation from '../images/what_we_do/yoga_meditation.jpg';
-import kiddo_fitness from '../images/what_we_do/kiddo_fitness.jpg';
-import geriatric_fitness from '../images/what_we_do/geriatric_fitness.jpg';
+import personal_training from '../../images/our-services/personal_training.jpg'
+import injury_rehab from '../../images/our-services/injury_rehab.png';
+import sport_fitness from '../../images/our-services/sport_fitness.jpg';
+import yoga_meditation from '../../images/our-services/yoga_meditation.jpg';
+import kiddo_fitness from '../../images/our-services/kiddo_fitness.jpg';
+import geriatric_fitness from '../../images/our-services/geriatric_fitness.jpg';
 
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import {  Link } from 'react-router-dom';
 
 
-function WhatWeDo() {
+function OurServices() {
   return (
-    <div className="what-we-do" id="what-we-do">
+    <div className="our-services" id="our-services">
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
             <h1>What We Do?</h1>
             <div className="underline"></div>
         </AnimationOnScroll>
 
         <div className="container">
+
+            <Link to='/personal_training'>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} style={{animationDelay: '0s'}}>
                 <div className="box box-1">
                     <img src={personal_training} alt="" />
@@ -28,7 +31,9 @@ function WhatWeDo() {
                     </p>
                 </div>
             </AnimationOnScroll>
+            </Link>
 
+            
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} style={{animationDelay: '.3s'}}>
             <div className="box box-2">
                 <img src={injury_rehab} alt="" />
@@ -62,31 +67,35 @@ function WhatWeDo() {
             </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} style={{animationDelay: '.3s'}}>
-                <div className="box box-5">
-                    <img src={kiddo_fitness} alt="" />
-                    <h2>Kiddo Fitness</h2>
-                    <small>It takes courage to evolve into who you really are.</small>
-                    <p>
-                        E-fit presents special fitness plans for kids and teenagers, to make them champions of physical fitness for life.
-                    </p>
-                </div>
-            </AnimationOnScroll>
-
-            <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} style={{animationDelay: '.6s'}}>
-                <div className="box box-6">
-                    <img src={geriatric_fitness} alt="" />
-                    <h2>Geriatric Fitness</h2>
-                    <small>Don’t Retire. Relive.</small>
-                    <p>
-                        Retirement is the perfect time to do the things you've always wanted to do.Tell us your dreams, and we will train your body to fulfill it!
-                    </p>
-                </div>
-            </AnimationOnScroll>
+            <Link to='/kiddos_fitness'>
+                <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} style={{animationDelay: '.3s'}}>
+                    <div className="box box-5">
+                        <img src={kiddo_fitness} alt="" />
+                        <h2>Kiddo Fitness</h2>
+                        <small>It takes courage to evolve into who you really are.</small>
+                        <p>
+                            E-fit presents special fitness plans for kids and teenagers, to make them champions of physical fitness for life.
+                        </p>
+                    </div>
+                </AnimationOnScroll>
+            </Link>
+            
+            <Link to='/geriatric_fitness'>
+                <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} style={{animationDelay: '.6s'}}>
+                    <div className="box box-6">
+                        <img src={geriatric_fitness} alt="" />
+                        <h2>Geriatric Fitness</h2>
+                        <small>Don’t Retire. Relive.</small>
+                        <p>
+                            Retirement is the perfect time to do the things you've always wanted to do.Tell us your dreams, and we will train your body to fulfill it!
+                        </p>
+                    </div>
+                </AnimationOnScroll>
+            </Link>
             
         </div>
     </div>
   )
 }
 
-export default WhatWeDo
+export default OurServices;

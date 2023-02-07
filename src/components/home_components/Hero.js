@@ -1,11 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar'
-import videoMp4 from '../images/hero_1.mp4';
+import videoMp4 from '../../images/hero_1.mp4';
 
 function Hero() {
   return (
     <div className="hero" id="hero">
-        <Navbar />
         {/* <div className="overlay"></div> */}
         <video autoPlay loop muted className='back-video' src={videoMp4}/>
         {/* <div className="hero-text">

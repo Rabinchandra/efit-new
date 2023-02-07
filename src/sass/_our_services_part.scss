@@ -1,0 +1,37 @@
+.our-services-part {
+    margin-top: 60px;
+    padding: 3em;
+    height: auto;
+    min-height: 50vh;
+    text-align: center;
+    // border: 1px solid red;
+
+    img {
+        width: 300px;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        margin-bottom: 2em;
+        // border: 1px solid red;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 1.8em;
+        font-size: 1.1em;
+        color: rgb(63, 63, 63);
+        padding: 0 3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .our-services-part {
+        p {
+            padding: 0;
+        }
+    }
+}

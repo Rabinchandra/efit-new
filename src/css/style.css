@@ -59,6 +59,7 @@
 
 .sidebar {
   position: fixed;
+  top: 0;
   right: 0;
   background: #fff;
   z-index: 100;
@@ -277,20 +278,20 @@
     background-color: #25b525;
   }
 }
-.what-we-do {
+.our-services {
   padding: 7em 7em;
 }
-.what-we-do h1 {
+.our-services h1 {
   text-align: center;
   width: 100%;
 }
-.what-we-do .container {
+.our-services .container {
   margin-top: 5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.what-we-do .container .box {
+.our-services .container .box {
   border-radius: 25px 25px 0 0;
   width: 30%;
   max-width: 350px;
@@ -304,13 +305,13 @@
   transition: 0.3s transform;
   position: relative;
 }
-.what-we-do .container .box small {
+.our-services .container .box small {
   width: 80%;
   display: block;
   margin: auto;
   font-size: 1em;
 }
-.what-we-do .container .box p {
+.our-services .container .box p {
   padding: 0 1em;
   display: block;
   position: absolute;
@@ -325,13 +326,13 @@
   min-height: 150px;
   opacity: 0;
 }
-.what-we-do .container .box img {
+.our-services .container .box img {
   width: 100%;
 }
-.what-we-do .container .box:hover {
+.our-services .container .box:hover {
   transform: scale(1.05);
 }
-.what-we-do .container .box:hover p {
+.our-services .container .box:hover p {
   bottom: -5%;
   opacity: 1;
 }
@@ -419,6 +420,8 @@
   }
 }
 .footer {
+  width: 100%;
+  box-sizing: border-box;
   margin-top: 50px;
   display: flex;
   padding: 3em;
@@ -461,6 +464,36 @@
   .footer .logo {
     width: 100%;
     margin-bottom: 2em;
+  }
+}
+.our-services-part {
+  margin-top: 60px;
+  padding: 3em;
+  height: auto;
+  min-height: 50vh;
+  text-align: center;
+}
+.our-services-part img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+.our-services-part h2 {
+  margin: 0;
+}
+.our-services-part p {
+  font-weight: 300;
+  line-height: 1.8em;
+  font-size: 1.1em;
+  color: rgb(63, 63, 63);
+  padding: 0 3em;
+}
+
+@media screen and (max-width: 800px) {
+  .our-services-part p {
+    padding: 0;
   }
 }
 body, html {
