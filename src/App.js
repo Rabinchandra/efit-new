@@ -13,6 +13,9 @@ import Footer from './components/Footer';
 import PersonalTraining from './components/pages/our-services/PersonalTraining'
 import GeriatricFitness from './components/pages/our-services/Geriatric_fitness';
 import KiddosFitness from './components/pages/our-services/KiddosFitness';
+import InjuryRehab from './components/pages/our-services/InjuryRehab';
+import SportFitness from './components/pages/our-services/SportFitness';
+import YogaMeditation from './components/pages/our-services/YogaMeditation';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path="/personal_training" element={<PersonalTraining />} />
           <Route path="/geriatric_fitness" element={ <GeriatricFitness />} />
           <Route path="/kiddos_fitness" element={ <KiddosFitness /> }/>
+          <Route path="/injury_rehab" element={ <InjuryRehab /> }/>
+          <Route path="/sport_fitness" element={ <SportFitness /> }/>
+          <Route path="/yoga_meditation" element={ <YogaMeditation /> }/>
         </Routes>
         
         <Footer />

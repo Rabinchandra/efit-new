@@ -5,10 +5,10 @@ const Footer = () => {
                 <img src={require('../images/white-efit-logo.png')} alt="" />
             </div>
             <div className="links" id="contact-links">
-                <a href="#">
+                <a href="instagram.com/e-fit">
                     <i class="fa fa-brands fa-instagram"></i>
                 </a>
-                <a href="#">
+                <a href="fb.com/e-fit">
                     <i class="fa fa-brands fa-facebook"></i>
                 </a>
             <div className="rights">
